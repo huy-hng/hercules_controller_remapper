@@ -533,18 +533,6 @@ TkSuQmCC&#xd;
   <color name="yellow" off="50" on="7c"/>
  </colors-list>
  <onstart>F000014E1C02047F000000000000F7</onstart>
- <onstart>F000014E1C02047F000000000000F7</onstart>
- <onstart>F000014E1C02047F000000000000F7</onstart>
- <onstart>F000014E1C02047F000000000000F7</onstart>
- <onstart>F000014E1C02047F000000000000F7</onstart>
- <onstart>F000014E1C02047F000000000000F7</onstart>
- <onstart>F000014E1C02047F000000000000F7</onstart>
- <onexit>B07F7E</onexit>
- <onexit>B07F7E</onexit>
- <onexit>B07F7E</onexit>
- <onexit>B07F7E</onexit>
- <onexit>B07F7E</onexit>
- <onexit>B07F7E</onexit>
  <onexit>B07F7E</onexit>
  <midi-device>
   <control name="BEATJMP1_A">
