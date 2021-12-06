@@ -1,0 +1,150 @@
+<midi-map>
+	<map name="ASSIST_SH" action="chann=1  action=play_pause value=&quot;auto&quot;" />
+
+
+	<!-- loop in and out buttons -->
+	<map name="LOOP_IN_SH_A" action="chann=1  action=seek_loop value=&quot;-1&quot;" />
+	<map name="LOOP_IN_SH_B" action="chann=2  action=seek_loop value=&quot;-1&quot;" />
+	<map name="LOOP_OUT_SH_A" action="chann=1  action=seek_loop value=&quot;+1&quot;" />
+	<map name="LOOP_OUT_SH_B" action="chann=2  action=seek_loop value=&quot;+1&quot;" />
+
+	<!-- #region analog -->
+	<map name="XFADER_SH" action="chann=1  action=pitch value=&quot;auto&quot;" />
+	<!-- <map name="XFADER" action="chann=1  action=pitch value=&quot;auto&quot;" /> -->
+
+	<map name="VOL_C" action="chann=2  action=level value=&quot;auto&quot; takeover=&quot;1&quot;" />
+	<map name="VOL_D" action="chann=1  action=level value=&quot;auto&quot; takeover=&quot;1&quot;" />
+
+	<map name="PITCH_C" action="chann=2  action=pitch value=&quot;auto&quot; takeover=&quot;1&quot;" />
+	<map name="PITCH_D" action="chann=1  action=pitch value=&quot;auto&quot; takeover=&quot;1&quot;" />
+
+	<map name="JOG_SHIFT_BEND_A" action="chann=1  action=pitch value=&quot;auto&quot;" />
+	<map name="JOG_SHIFT_BEND_B" action="chann=2  action=pitch value=&quot;auto&quot;" />
+
+	<!-- EQ knobs -->
+	<map name="GAIN_C" action="chann=1  action=bank_wetness value=&quot;0&quot;" />
+	<map name="GAIN_D" action="chann=2  action=bank_wetness value=&quot;0&quot;" />
+	<map name="LOW_C" action="chann=1  action=set_effect_param1 value=&quot;1&quot;" />
+	<map name="LOW_D" action="chann=2  action=set_effect_param1 value=&quot;1&quot;" />
+	<map name="MID_C" action="chann=1  action=set_effect_param1  value=&quot;2&quot;" />
+	<map name="MID_D" action="chann=2  action=set_effect_param1  value=&quot;2&quot;" />
+	<map name="HIGH_C" action="chann=1  action=set_effect_param1  value=&quot;3&quot;" />
+	<map name="HIGH_D" action="chann=2  action=set_effect_param1  value=&quot;3&quot;" />
+	<map name="FILTER_C" action="chann=1  action=bank_wetness value=&quot;0&quot;" />
+	<map name="FILTER_D" action="chann=2  action=bank_wetness value=&quot;0&quot;" />
+	<!-- #endregion analog -->
+
+
+	<!-- Headphone buttons -->
+	<map name="PFL_SHIFT_NEXTFILTERFX_A" action="chann=1  action=browse_filter_fx value=&quot;+1&quot;" />
+	<map name="PFL_SHIFT_NEXTFILTERFX_B" action="chann=2  action=browse_filter_fx value=&quot;+1&quot;" />
+
+	<map name="SYNC_SH_A" action="chann=default  action=pitch_range value=&quot;-1&quot;" />
+	<map name="SYNC_SH_B" action="chann=default  action=pitch_range value=&quot;+1&quot;" />
+	<!-- MASTER_A is basically shift sync -->
+	<!-- <map name="MASTER_A" action="chann=default  action=pitch_range value=&quot;-1&quot;" />
+	<map name="MASTER_B" action="chann=default  action=pitch_range value=&quot;+1&quot;" /> -->
+
+	<!-- #region PADFX -->
+	<map name="PADFX1_A" action="chann=1  action=toggle_filter_fx value=&quot;1&quot;" />
+	<map name="PADFX2_A" action="chann=1  action=toggle_filter_fx value=&quot;2&quot;" />
+	<map name="PADFX3_A" action="chann=1  action=toggle_filter_fx value=&quot;3&quot;" />
+	<map name="PADFX4_A" action="chann=1  action=toggle_filter_fx value=&quot;4&quot;" />
+	<map name="PADFX5_A" action="chann=1  action=toggle_effect value=&quot;1&quot;" />
+	<map name="PADFX6_A" action="chann=1  action=toggle_effect value=&quot;2&quot;" />
+	<map name="PADFX7_A" action="chann=1  action=toggle_effect value=&quot;3&quot;" />
+	<map name="PADFX8_A" action="chann=1  action=toggle_fx_panel value=&quot;auto&quot;" />
+
+	<map name="PADFX1_B" action="chann=2  action=toggle_filter_fx value=&quot;1&quot;" />
+	<map name="PADFX2_B" action="chann=2  action=toggle_filter_fx value=&quot;2&quot;" />
+	<map name="PADFX3_B" action="chann=2  action=toggle_filter_fx value=&quot;3&quot;" />
+	<map name="PADFX4_B" action="chann=2  action=toggle_filter_fx value=&quot;4&quot;" />
+	<map name="PADFX5_B" action="chann=2  action=toggle_effect value=&quot;1&quot;" />
+	<map name="PADFX6_B" action="chann=2  action=toggle_effect value=&quot;2&quot;" />
+	<map name="PADFX7_B" action="chann=2  action=toggle_effect value=&quot;3&quot;" />
+	<map name="PADFX8_B" action="chann=2  action=toggle_fx_panel value=&quot;auto&quot;" />
+	<!-- #endregion PADFX -->
+
+	<!-- #region middle stuff -->
+	<!-- FX buttons in the middle -->
+	<map name="FILTER_FX_SH_1" action="chann=1  action=browse_filter_fx value=&quot;-1&quot;" />
+	<map name="FILTER_FX_SH_3" action="chann=1  action=browse_filter_fx value=&quot;+1&quot;" />
+	<map name="FILTER_FX_SH_2" action="chann=2  action=browse_filter_fx value=&quot;-1&quot;" />
+	<map name="FILTER_FX_SH_4" action="chann=2  action=browse_filter_fx value=&quot;+1&quot;" />
+	<!-- #endregion middle stuff -->
+
+
+	<!-- #region modes -->
+	<!-- #region mode 5 -->
+	<map name="TONE_CUE_P01_A" action="chann=1  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P01_B" action="chann=2  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P02_A" action="chann=1  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P02_B" action="chann=2  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P03_A" action="chann=1  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P03_B" action="chann=2  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P04_A" action="chann=1  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P04_B" action="chann=2  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P05_A" action="chann=1  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P05_B" action="chann=2  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P06_A" action="chann=1  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P06_B" action="chann=2  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P07_A" action="chann=1  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P07_B" action="chann=2  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P08_A" action="chann=1  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_CUE_P08_B" action="chann=2  action=hot_cue value=&quot;auto&quot;" />
+	<map name="TONE_KEY_P01_A" action="chann=1  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_P01_B" action="chann=2  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_P02_A" action="chann=1  action=key_shift value=&quot;+1 temporary&quot;" />
+	<map name="TONE_KEY_P02_B" action="chann=2  action=key_shift value=&quot;+1 temporary&quot;" />
+	<map name="TONE_KEY_P03_A" action="chann=1  action=key_shift value=&quot;+2 temporary&quot;" />
+	<map name="TONE_KEY_P03_B" action="chann=2  action=key_shift value=&quot;+2 temporary&quot;" />
+	<map name="TONE_KEY_P04_A" action="chann=1  action=key_shift value=&quot;+3 temporary&quot;" />
+	<map name="TONE_KEY_P04_B" action="chann=2  action=key_shift value=&quot;+3 temporary&quot;" />
+	<map name="TONE_KEY_P05_A" action="chann=1  action=key_shift value=&quot;-4 temporary&quot;" />
+	<map name="TONE_KEY_P05_B" action="chann=2  action=key_shift value=&quot;-4 temporary&quot;" />
+	<map name="TONE_KEY_P06_A" action="chann=1  action=key_shift value=&quot;-3 temporary&quot;" />
+	<map name="TONE_KEY_P06_B" action="chann=2  action=key_shift value=&quot;-3 temporary&quot;" />
+	<map name="TONE_KEY_P07_A" action="chann=1  action=key_shift value=&quot;-2 temporary&quot;" />
+	<map name="TONE_KEY_P07_B" action="chann=2  action=key_shift value=&quot;-2 temporary&quot;" />
+	<map name="TONE_KEY_P08_A" action="chann=1  action=key_shift value=&quot;-1 temporary&quot;" />
+	<map name="TONE_KEY_P08_B" action="chann=2  action=key_shift value=&quot;-1 temporary&quot;" />
+	<map name="TONE_KEY_RESET_P01_A" action="chann=1  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P01_B" action="chann=2  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P02_A" action="chann=1  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P02_B" action="chann=2  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P03_A" action="chann=1  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P03_B" action="chann=2  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P04_A" action="chann=1  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P04_B" action="chann=2  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P05_A" action="chann=1  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P05_B" action="chann=2  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P06_A" action="chann=1  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P06_B" action="chann=2  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P07_A" action="chann=1  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P07_B" action="chann=2  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P08_A" action="chann=1  action=key_shift value=&quot;reset temporary&quot;" />
+	<map name="TONE_KEY_RESET_P08_B" action="chann=2  action=key_shift value=&quot;reset temporary&quot;" />
+	<!-- #endregion mode 5 -->
+
+	<!-- #region mode 8 (beatjump) -->
+	<map name="BEATJMP1_A" action="chann=1  action=skip_beat value=&quot;-9&quot;" />
+	<map name="BEATJMP1_B" action="chann=2  action=skip_beat value=&quot;-1&quot;" />
+	<map name="BEATJMP2_A" action="chann=1  action=skip_beat value=&quot;+1&quot;" />
+	<map name="BEATJMP2_B" action="chann=2  action=skip_beat value=&quot;+1&quot;" />
+	<map name="BEATJMP3_A" action="chann=1  action=skip_beat value=&quot;-2&quot;" />
+	<map name="BEATJMP3_B" action="chann=2  action=skip_beat value=&quot;-2&quot;" />
+	<map name="BEATJMP4_A" action="chann=1  action=skip_beat value=&quot;+2&quot;" />
+	<map name="BEATJMP4_B" action="chann=2  action=skip_beat value=&quot;+2&quot;" />
+	<map name="BEATJMP5_A" action="chann=1  action=skip_beat value=&quot;-4&quot;" />
+	<map name="BEATJMP5_B" action="chann=2  action=skip_beat value=&quot;-4&quot;" />
+	<map name="BEATJMP6_A" action="chann=1  action=skip_beat value=&quot;+4&quot;" />
+	<map name="BEATJMP6_B" action="chann=2  action=skip_beat value=&quot;+4&quot;" />
+	<map name="BEATJMP7_A" action="chann=1  action=skip_beat value=&quot;-8&quot;" />
+	<map name="BEATJMP7_B" action="chann=2  action=skip_beat value=&quot;-8&quot;" />
+	<map name="BEATJMP8_A" action="chann=1  action=skip_beat value=&quot;+8&quot;" />
+	<map name="BEATJMP8_B" action="chann=2  action=skip_beat value=&quot;+8&quot;" />
+	<map name="BEATJMPTAB_A" action="chann=1  action=show_track_tab value=&quot;3&quot;" />
+	<map name="BEATJMPTAB_B" action="chann=2  action=show_track_tab value=&quot;3&quot;" />
+	<!-- #endregion beatjump -->
+	<!-- #endregion modes -->
+</midi-map>
