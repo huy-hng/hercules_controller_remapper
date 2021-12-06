@@ -22,7 +22,7 @@ def replace_element(parent, custom_element_file):
 		parent.append(child)
 
 def main():
-	file_name = './Other Mappings/Hercules DJ Inpulse 500.djm'
+	file_name = './midi_files/Hercules DJ Inpulse 500.djm'
 	tree = ET.parse(file_name)
 	root = tree.getroot()
 
