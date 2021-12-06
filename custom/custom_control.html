@@ -57,6 +57,10 @@
     <input type="toggle" message="95 05 {value}" min="0" max="7f" />
     <output type="toggle" message="95 05 {value}" min="0" max="7f" />
   </control>
+  <control name="SYNC_A_QUANT">
+    <input type="toggle" message="91 05 {value}" min="0" max="7f" />
+    <output type="toggle" message="91 05 {value}" min="0" max="7f" />
+  </control>
 
 
   <control name="DELETE_HC1_A">
@@ -135,4 +139,8 @@
     <output type="toggle" message="97 57 {value}" min="40" max="60" />
   </control>
   <!-- #endregion PADFX -->
+
+  <control name="LOOP_ENC_A_QUANT">
+    <input type="interval" incremental="yes" steps-per-turn="24" message="b1 0e 01" min="7f-40" max="1-3f" />
+  </control>
 </midi-device>
