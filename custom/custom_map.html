@@ -167,5 +167,13 @@
 	<!-- #endregion beatjump -->
 	<!-- #endregion modes -->
 
-	<map name="LOOP_ENC_A_QUANT" action="chann=1  action=modify_bpm value=&quot;auto&quot; condition4=&quot;1&quot;" />
+
+	<!-- #region testing -->
+	<!-- <map name="MOVEGRID_bend_A" action="chann=1  action=moveGrid value=&quot;auto&quot; condition4=&quot;1&quot;" /> -->
+	<map name="CONDITION_FOUR_A_PADFX1" action="chann=default  action=condition_four value=&quot;5 temporary&quot;" />
+	<map name="LOOP_ENC_A" action="chann=1  action=loop_half_double value=&quot;auto&quot; condition4=&quot;0&quot;" />
+	<map name="LOOP_ENC_B" action="chann=2  action=loop_half_double value=&quot;auto&quot; condition4=&quot;0&quot;" />
+	<map name="LOOP_ENC_A_QUANT" action="chann=1  action=set_effect_param1 value=&quot;1&quot; condition4=&quot;5&quot;" />
+
+	<!-- #endregion testing -->
 </midi-map>
