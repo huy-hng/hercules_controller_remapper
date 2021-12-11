@@ -57,21 +57,7 @@
     <input type="toggle" message="95 05 {value}" min="0" max="7f" />
     <output type="toggle" message="95 05 {value}" min="0" max="7f" />
   </control>
-  <control name="SYNC_A_QUANT">
-    <input type="toggle" message="91 05 {value}" min="0" max="7f" />
-    <output type="toggle" message="91 05 {value}" min="0" max="7f" />
-  </control>
 
-
-  <control name="DELETE_HC1_A">
-    <input type="toggle" message="96 08 {value}" min="0" max="7f" />
-    <output type="color" message="96 08 {value}" min="0" max="3" />
-  </control>
-  <control name="HC1_A">
-    <input type="toggle" message="96 00 {value}" min="0" max="7f" />
-    <output type="color" message="96 00 {value}" min="1" max="3" />
-    <output type="color" message="96 08 {value}" min="1" max="3" />
-  </control>
 
   <!-- #region PADFX -->
   <control name="PADFX1_A">
@@ -138,9 +124,92 @@
     <input type="toggle" message="97 57 {value}" min="0" max="7f" />
     <output type="toggle" message="97 57 {value}" min="40" max="60" />
   </control>
+
+  <control name="PADFX1_SH_A">
+    <input type="toggle" message="96 58 {value}" min="0" max="7f" />
+    <output type="toggle" message="96 58 {value}" min="02" max="03" />
+  </control>
+  <control name="PADFX1_SH_B">
+    <input type="toggle" message="97 58 {value}" min="0" max="7f" />
+    <output type="toggle" message="97 58 {value}" min="02" max="03" />
+  </control>
+  <control name="PADFX2_SH_A">
+    <input type="toggle" message="96 59 {value}" min="0" max="7f" />
+    <output type="toggle" message="96 59 {value}" min="50" max="7c" />
+  </control>
+  <control name="PADFX2_SH_B">
+    <input type="toggle" message="97 59 {value}" min="0" max="7f" />
+    <output type="toggle" message="97 59 {value}" min="50" max="7c" />
+  </control>
+  <control name="PADFX3_SH_A">
+    <input type="toggle" message="96 5a {value}" min="0" max="7f" />
+    <output type="toggle" message="96 5a {value}" min="10" max="1c" />
+  </control>
+  <control name="PADFX3_SH_B">
+    <input type="toggle" message="97 5a {value}" min="0" max="7f" />
+    <output type="toggle" message="97 5a {value}" min="10" max="1c" />
+  </control>
+  <control name="PADFX4_SH_A">
+    <input type="toggle" message="96 5b {value}" min="0" max="7f" />
+    <output type="toggle" message="96 5b {value}" min="40" max="60" />
+  </control>
+  <control name="PADFX4_SH_B">
+    <input type="toggle" message="97 5b {value}" min="0" max="7f" />
+    <output type="toggle" message="97 5b {value}" min="40" max="60" />
+  </control>
+  <control name="PADFX5_SH_A">
+    <input type="toggle" message="96 5c {value}" min="0" max="7f" />
+    <output type="toggle" message="96 5c {value}" min="02" max="03" />
+  </control>
+  <control name="PADFX5_SH_B">
+    <input type="toggle" message="97 5c {value}" min="0" max="7f" />
+    <output type="toggle" message="97 5c {value}" min="02" max="03" />
+  </control>
+  <control name="PADFX6_SH_A">
+    <input type="toggle" message="96 5d {value}" min="0" max="7f" />
+    <output type="toggle" message="96 5d {value}" min="50" max="7c" />
+  </control>
+  <control name="PADFX6_SH_B">
+    <input type="toggle" message="97 5d {value}" min="0" max="7f" />
+    <output type="toggle" message="97 5d {value}" min="50" max="7c" />
+  </control>
+  <control name="PADFX7_SH_A">
+    <input type="toggle" message="96 5e {value}" min="0" max="7f" />
+    <output type="toggle" message="96 5e {value}" min="10" max="1c" />
+  </control>
+  <control name="PADFX7_SH_B">
+    <input type="toggle" message="97 5e {value}" min="0" max="7f" />
+    <output type="toggle" message="97 5e {value}" min="10" max="1c" />
+  </control>
+  <control name="PADFX8_SH_A">
+    <input type="toggle" message="96 5f {value}" min="0" max="7f" />
+    <output type="toggle" message="96 5f {value}" min="40" max="60" />
+  </control>
+  <control name="PADFX8_SH_B">
+    <input type="toggle" message="97 5f {value}" min="0" max="7f" />
+    <output type="toggle" message="97 5f {value}" min="40" max="60" />
+  </control>
   <!-- #endregion PADFX -->
 
-  <control name="LOOP_ENC_A_QUANT">
+  <!-- #region testing -->
+  <endtrol name="LOOP_ENC_A_QUANT">
     <input type="interval" incremental="yes" steps-per-turn="24" message="b1 0e 01" min="7f-40" max="1-3f" />
   </control>
+
+  <control name="SYNC_A_QUANT">
+    <input type="toggle" message="91 05 {value}" min="0" max="7f" />
+    <output type="toggle" message="91 05 {value}" min="0" max="7f" />
+  </control>
+
+  <control name="DELETE_HC1_A">
+    <input type="toggle" message="96 08 {value}" min="0" max="7f" />
+    <output type="color" message="96 08 {value}" min="0" max="3" />
+  </control>
+  <control name="HC1_A">
+    <input type="toggle" message="96 00 {value}" min="0" max="7f" />
+    <output type="color" message="96 00 {value}" min="1" max="3" />
+    <output type="color" message="96 08 {value}" min="1" max="3" />
+  </control>
+
+  <!-- #region testing -->
 </midi-device>
