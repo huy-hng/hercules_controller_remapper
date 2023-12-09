@@ -18,10 +18,10 @@ def replace_element(parent, custom_element_file):
 		if og_child is not None:
 			parent.remove(og_child)
 
-		# parent.append(child)
+		parent.append(child)
 
 def main():
-	file_name = './midi_files/Hercules DJ Inpulse 500.djm'
+	file_name = './midi_templates/Hercules DJ Inpulse 500_31.djm'
 	tree = ET.parse(file_name)
 	root = tree.getroot()
 
