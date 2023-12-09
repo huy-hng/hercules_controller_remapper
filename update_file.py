@@ -1,4 +1,3 @@
-# %%
 import xml.etree.ElementTree as ET
 
 
@@ -19,7 +18,7 @@ def replace_element(parent, custom_element_file):
 		if og_child is not None:
 			parent.remove(og_child)
 
-		parent.append(child)
+		# parent.append(child)
 
 def main():
 	file_name = './midi_files/Hercules DJ Inpulse 500.djm'
@@ -36,8 +35,8 @@ def main():
 	# default_midi_map = ET.parse('./custom/default_map.html')
 	# root.append(default_midi_map.getroot())
 
-	replace_element(midi_map, './custom/custom_map.html')
-	replace_element(midi_device, './custom/custom_control.html')
+	replace_element(midi_map, './custom/custom_map.xml')
+	replace_element(midi_device, './custom/custom_control.xml')
 
 	tree.write('Hercules DJ Inpulse 500 - Custom.djm')
 

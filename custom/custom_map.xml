@@ -1,58 +1,59 @@
 <midi-map>
 	<!-- loop in and out buttons -->
-	<map name="LOOP_IN_SH_A" action="chann=1  action=seek_loop value=&quot;-1&quot;" />
-	<map name="LOOP_IN_SH_B" action="chann=2  action=seek_loop value=&quot;-1&quot;" />
-	<map name="LOOP_OUT_SH_A" action="chann=1  action=seek_loop value=&quot;+1&quot;" />
-	<map name="LOOP_OUT_SH_B" action="chann=2  action=seek_loop value=&quot;+1&quot;" />
+	<map name="LOOP_IN_SH_A"  action="chann=1  action=seek_loop value=&quot;-4&quot;" />
+	<map name="LOOP_IN_SH_B"  action="chann=2  action=seek_loop value=&quot;-4&quot;" />
+	<map name="LOOP_OUT_SH_A" action="chann=1  action=seek_loop value=&quot;+4&quot;" />
+	<map name="LOOP_OUT_SH_B" action="chann=2  action=seek_loop value=&quot;+4&quot;" />
+
+
+	<!-- loop encoder (needs to be in this exact order for some reason) -->
+	<!-- <map name="LOOP_ENC_A" action="chann=1  action=loop_move_selection value=&quot;auto&quot;" /> -->
+	<!-- <map name="LOOP_ENC_A" action="chann=1  action=condition_three value=&quot;1 temporary&quot;" /> -->
+	<!-- <map name="LOOP_ENC_B" action="chann=2  action=condition_three value=&quot;1 temporary&quot;" /> -->
+	<!-- <map name="LOOP_ENC_B" action="chann=2  action=loop_move_selection value=&quot;auto&quot;" /> -->
+
+
+	<map name="LOOP_ENC_SH_A" action="chann=1  action=loop_half_double value=&quot;auto&quot;" />
+	<map name="LOOP_ENC_SH_B" action="chann=2  action=loop_half_double value=&quot;auto&quot;" />
 
 
 	<!-- #region analog -->
-		<map name="XFADER_SH" action="chann=1  action=pitch value=&quot;auto&quot;" />
-		<!-- <map name="XFADER" action="chann=1  action=pitch value=&quot;auto&quot;" /> -->
+	<map name="XFADER_SH" action="chann=1  action=pitch value=&quot;auto&quot;" />
+	<!-- <map name="XFADER" action="chann=1  action=pitch value=&quot;auto&quot;" /> -->
 
-		<map name="VOL_C" action="chann=2  action=level value=&quot;auto&quot; takeover=&quot;1&quot;" />
-		<map name="VOL_D" action="chann=1  action=level value=&quot;auto&quot; takeover=&quot;1&quot;" />
+	<!-- <map name="VOL_C" action="chann=2  action=level value=&quot;auto&quot; takeover=&quot;1&quot;" /> -->
+	<!-- <map name="VOL_D" action="chann=1  action=level value=&quot;auto&quot; takeover=&quot;1&quot;" /> -->
 
-		<map name="PITCH_C" action="chann=2  action=pitch value=&quot;auto&quot; takeover=&quot;1&quot;" />
-		<map name="PITCH_D" action="chann=1  action=pitch value=&quot;auto&quot; takeover=&quot;1&quot;" />
+	<map name="PITCH_A" action="chann=1  action=pitch value=&quot;auto&quot;" />
+	<map name="PITCH_B" action="chann=2  action=pitch value=&quot;auto&quot;" />
+	<map name="PITCH_C" action="chann=3  action=pitch value=&quot;auto&quot; takeover=&quot;1&quot;" />
+	<map name="PITCH_D" action="chann=4  action=pitch value=&quot;auto&quot; takeover=&quot;1&quot;" />
 
-		<map name="JOG_SHIFT_BEND_A" action="chann=1  action=pitch value=&quot;auto&quot;" />
-		<map name="JOG_SHIFT_BEND_B" action="chann=2  action=pitch value=&quot;auto&quot;" />
+	<!-- <map name="JOG_SHIFT_BEND_A" action="chann=1  action=pitch value=&quot;auto&quot;" /> -->
+	<!-- <map name="JOG_SHIFT_BEND_B" action="chann=2  action=pitch value=&quot;auto&quot;" /> -->
 
-		<!-- EQ knobs -->
-		<map name="GAIN_C" action="chann=1  action=bank_wetness value=&quot;0&quot;" />
-		<map name="GAIN_D" action="chann=2  action=bank_wetness value=&quot;0&quot;" />
-		<map name="LOW_C" action="chann=1  action=set_effect_param1 value=&quot;1&quot;" />
-		<map name="LOW_D" action="chann=2  action=set_effect_param1 value=&quot;1&quot;" />
-		<map name="MID_C" action="chann=1  action=set_effect_param1  value=&quot;2&quot;" />
-		<map name="MID_D" action="chann=2  action=set_effect_param1  value=&quot;2&quot;" />
-		<map name="HIGH_C" action="chann=1  action=set_effect_param1  value=&quot;3&quot;" />
-		<map name="HIGH_D" action="chann=2  action=set_effect_param1  value=&quot;3&quot;" />
-		<map name="FILTER_C" action="chann=1  action=bank_wetness value=&quot;0&quot;" />
-		<map name="FILTER_D" action="chann=2  action=bank_wetness value=&quot;0&quot;" />
+	<!-- EQ knobs -->
+	<map name="GAIN_C" action="chann=1  action=bank_wetness value=&quot;0&quot;" />
+	<map name="GAIN_D" action="chann=2  action=bank_wetness value=&quot;0&quot;" />
+	<map name="LOW_C" action="chann=1  action=set_effect_param1 value=&quot;1&quot;" />
+	<map name="LOW_D" action="chann=2  action=set_effect_param1 value=&quot;1&quot;" />
+	<map name="MID_C" action="chann=1  action=set_effect_param1  value=&quot;2&quot;" />
+	<map name="MID_D" action="chann=2  action=set_effect_param1  value=&quot;2&quot;" />
+	<map name="HIGH_C" action="chann=1  action=set_effect_param1  value=&quot;3&quot;" />
+	<map name="HIGH_D" action="chann=2  action=set_effect_param1  value=&quot;3&quot;" />
+	<map name="FILTER_C" action="chann=1  action=bank_wetness value=&quot;0&quot;" />
+	<map name="FILTER_D" action="chann=2  action=bank_wetness value=&quot;0&quot;" />
 	<!-- #endregion analog -->
 
 
-	<!-- Headphone buttons -->
-	<map name="PFL_SHIFT_NEXTFILTERFX_A" action="chann=1  action=browse_filter_fx value=&quot;+1&quot;" />
-	<map name="PFL_SHIFT_NEXTFILTERFX_B" action="chann=2  action=browse_filter_fx value=&quot;+1&quot;" />
-
-	<map name="SYNC_SH_A" action="chann=default  action=pitch_range value=&quot;-1&quot;" />
-	<map name="SYNC_SH_B" action="chann=default  action=pitch_range value=&quot;+1&quot;" />
-	<map name="SYNC_QUANT_A" action="chann=default  action=pitch_range value=&quot;+1&quot; condition4=&quot;1&quot;" />
-	<!-- MASTER_A is basically shift sync -->
-	<!-- <map name="MASTER_A" action="chann=default  action=pitch_range value=&quot;-1&quot;" /> -->
-	<!-- <map name="MASTER_B" action="chann=default  action=pitch_range value=&quot;+1&quot;" /> -->
-
-
 	<!-- #region middle stuff -->
-		<map name="ASSIST_SH" action="chann=1  action=play_pause value=&quot;auto&quot;" />
+	<map name="ASSIST_SH" action="chann=1  action=play_pause value=&quot;auto&quot;" />
 
-		<!-- FX buttons in the middle -->
-		<map name="FILTER_FX_SH_1" action="chann=1  action=browse_filter_fx value=&quot;-1&quot;" />
-		<map name="FILTER_FX_SH_3" action="chann=1  action=browse_filter_fx value=&quot;+1&quot;" />
-		<map name="FILTER_FX_SH_2" action="chann=2  action=browse_filter_fx value=&quot;-1&quot;" />
-		<map name="FILTER_FX_SH_4" action="chann=2  action=browse_filter_fx value=&quot;+1&quot;" />
+	<!-- FX buttons in the middle -->
+	<map name="FILTER_FX_SH_1" action="chann=1  action=browse_filter_fx value=&quot;-1&quot;" />
+	<map name="FILTER_FX_SH_3" action="chann=1  action=browse_filter_fx value=&quot;+1&quot;" />
+	<map name="FILTER_FX_SH_2" action="chann=2  action=browse_filter_fx value=&quot;-1&quot;" />
+	<map name="FILTER_FX_SH_4" action="chann=2  action=browse_filter_fx value=&quot;+1&quot;" />
 	<!-- #endregion middle stuff -->
 
 
@@ -178,9 +179,7 @@
 	<map name="CONDITION_FOUR_B_PADFX7" action="chann=default  action=condition_four value=&quot;10 temporary&quot;" />
 	<map name="CONDITION_FOUR_A_PADFX8" action="chann=default  action=condition_four value=&quot;11 temporary&quot;" />
 	<map name="CONDITION_FOUR_B_PADFX8" action="chann=default  action=condition_four value=&quot;12 temporary&quot;" />
-	
-	<map name="LOOP_ENC_A" action="chann=1  action=loop_half_double value=&quot;auto&quot; condition4=&quot;0&quot;" />
-	<map name="LOOP_ENC_B" action="chann=2  action=loop_half_double value=&quot;auto&quot; condition4=&quot;0&quot;" />
+
 	<map name="LOOP_ENC_A_PADFX5" action="chann=1  action=set_effect_param1 value=&quot;1&quot; condition4=&quot;5&quot;" />
 	<map name="LOOP_ENC_B_PADFX5" action="chann=2  action=set_effect_param1 value=&quot;1&quot; condition4=&quot;6&quot;" />
 	<map name="LOOP_ENC_A_PADFX6" action="chann=1  action=set_effect_param1 value=&quot;2&quot; condition4=&quot;7&quot;" />
@@ -190,6 +189,19 @@
 	<map name="LOOP_ENC_A_PADFX8" action="chann=1  action=bank_wetness value=&quot;0&quot; condition4=&quot;11&quot;" />
 	<map name="LOOP_ENC_B_PADFX8" action="chann=2  action=bank_wetness value=&quot;0&quot; condition4=&quot;12&quot;" />
 	<!-- <map name="MOVEGRID_bend_A" action="chann=1  action=moveGrid value=&quot;auto&quot; condition4=&quot;1&quot;" /> -->
+
+
+	<!-- Headphone buttons -->
+	<map name="PFL_SHIFT_NEXTFILTERFX_A" action="chann=1  action=browse_filter_fx value=&quot;+1&quot;" />
+	<map name="PFL_SHIFT_NEXTFILTERFX_B" action="chann=2  action=browse_filter_fx value=&quot;+1&quot;" />
+
+	<map name="SYNC_SH_A" action="chann=default  action=pitch_range value=&quot;-1&quot;" />
+	<map name="SYNC_SH_B" action="chann=default  action=pitch_range value=&quot;+1&quot;" />
+	<!-- <map name="SYNC_QUANT_A" action="chann=default  action=pitch_range value=&quot;+1&quot; condition4=&quot;1&quot;" /> -->
+	<!-- MASTER_A is basically shift sync -->
+	<!-- <map name="MASTER_A" action="chann=default  action=pitch_range value=&quot;-1&quot;" /> -->
+	<!-- <map name="MASTER_B" action="chann=default  action=pitch_range value=&quot;+1&quot;" /> -->
+
 
 
 	<!-- #endregion testing -->
