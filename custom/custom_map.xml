@@ -7,14 +7,22 @@
 
 
 	<!-- loop encoder (needs to be in this exact order for some reason) -->
+	<map name="LOOP_ENC_A" action="chann=1  action=loop_move_selection value=&quot;auto&quot;" />
+	<map name="LOOP_ENC_A" action="chann=1  action=loop_half_double value=&quot;auto&quot;" />
+	<map name="LOOP_ENC_B" action="chann=2  action=loop_half_double value=&quot;auto&quot;" />
+	<map name="LOOP_ENC_B" action="chann=2  action=loop_move_selection value=&quot;auto&quot;" />
+
+	<map name="LOOP_ENC_SH_A" action="chann=1  action=condition_three value=&quot;1 temporary&quot;" />
+	<map name="LOOP_ENC_SH_B" action="chann=2  action=condition_three value=&quot;1 temporary&quot;" />
+
 	<!-- <map name="LOOP_ENC_A" action="chann=1  action=loop_move_selection value=&quot;auto&quot;" /> -->
 	<!-- <map name="LOOP_ENC_A" action="chann=1  action=condition_three value=&quot;1 temporary&quot;" /> -->
 	<!-- <map name="LOOP_ENC_B" action="chann=2  action=condition_three value=&quot;1 temporary&quot;" /> -->
 	<!-- <map name="LOOP_ENC_B" action="chann=2  action=loop_move_selection value=&quot;auto&quot;" /> -->
 
+	<!-- <map name="LOOP_ENC_SH_A" action="chann=1  action=loop_half_double value=&quot;auto&quot;" /> -->
+	<!-- <map name="LOOP_ENC_SH_B" action="chann=2  action=loop_half_double value=&quot;auto&quot;" /> -->
 
-	<map name="LOOP_ENC_SH_A" action="chann=1  action=loop_half_double value=&quot;auto&quot;" />
-	<map name="LOOP_ENC_SH_B" action="chann=2  action=loop_half_double value=&quot;auto&quot;" />
 
 
 	<!-- #region analog -->
