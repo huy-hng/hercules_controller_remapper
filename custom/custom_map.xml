@@ -1,9 +1,9 @@
 <midi-map>
 	<!-- loop in and out buttons -->
-	<map name="LOOP_IN_SH_A"  action="chann=1  action=seek_loop value=&quot;-4&quot;" />
-	<map name="LOOP_IN_SH_B"  action="chann=2  action=seek_loop value=&quot;-4&quot;" />
-	<map name="LOOP_OUT_SH_A" action="chann=1  action=seek_loop value=&quot;+4&quot;" />
-	<map name="LOOP_OUT_SH_B" action="chann=2  action=seek_loop value=&quot;+4&quot;" />
+	<map name="LOOP_IN_SH_A"  action="chann=1  action=seek_loop value=&quot;-32&quot;" />
+	<map name="LOOP_IN_SH_B"  action="chann=2  action=seek_loop value=&quot;-32&quot;" />
+	<map name="LOOP_OUT_SH_A" action="chann=1  action=seek_loop value=&quot;+32&quot;" />
+	<map name="LOOP_OUT_SH_B" action="chann=2  action=seek_loop value=&quot;+32&quot;" />
 
 
 	<!-- loop encoder (needs to be in this exact order for some reason) -->
