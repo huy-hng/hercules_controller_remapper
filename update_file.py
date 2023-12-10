@@ -1,5 +1,10 @@
 import xml.etree.ElementTree as ET
 
+MAP_FILE = './custom/custom_map.xml'
+CONTROL_FILE =  './custom/custom_control.xml'
+
+INPUT_FILE = './midi_templates/Hercules DJ Inpulse 500_31.djm'
+OUTPUT_FILE = 'Hercules DJ Inpulse 500 - Custom.djm'
 
 def find_child_by_name(element, name):
 	for child in element:
@@ -21,7 +26,7 @@ def replace_element(parent, custom_element_file):
 		parent.append(child)
 
 def main():
-	file_name = './midi_templates/Hercules DJ Inpulse 500_31.djm'
+	file_name = INPUT_FILE
 	tree = ET.parse(file_name)
 	root = tree.getroot()
 
@@ -35,10 +40,10 @@ def main():
 	# default_midi_map = ET.parse('./custom/default_map.html')
 	# root.append(default_midi_map.getroot())
 
-	replace_element(midi_map, './custom/custom_map.xml')
-	replace_element(midi_device, './custom/custom_control.xml')
+	replace_element(midi_map, MAP_FILE)
+	replace_element(midi_device, CONTROL_FILE)
 
-	tree.write('Hercules DJ Inpulse 500 - Custom.djm')
+    tree.write(OUTPUT_FILE)
 
 if __name__ == '__main__':
 	main()
