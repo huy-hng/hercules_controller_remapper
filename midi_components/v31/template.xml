@@ -1,0 +1,26 @@
+<midi hw-in-mix-off="F000014E1C02017F000000000000F7" hw-in-mix-on="F000014E1C02017F000001000000F7"
+	sysex="F07E7F060200014E02001C0001000000F7" version="31"
+	name="DJControl Inpulse 500" map-name="Hercules Inpulse 500 - Custom Mapping"
+	description="Hercules Inpulse 500 Custom Mapping">
+	<help-url url="" />
+	<soundcard master="true" cue2mix="true" channels="4" gain="true" volume="true" headphones="true" />
+	<decks hasMotorJog="false" MIXER="true" mode="2H" REC="false" FX="false">
+		<deck load="" ID="1" type="player" />
+		<deck load="" ID="2" type="player" />
+		<deck cells="8" load="" ID="3" type="sampler" />
+		<deck cells="8" load="" ID="4" type="sampler" />
+	</decks>
+	<colors-list>
+		<color on="03" off="02" name="blue" />
+		<color on="1f" off="12" name="cyan" />
+		<color on="63" off="42" name="fuchsia" />
+		<color on="1c" off="10" name="green" />
+		<color on="5c" off="30" name="lime" />
+		<color on="74" off="4c" name="orange" />
+		<color on="60" off="40" name="red" />
+		<color on="7f" off="52" name="white" />
+		<color on="7c" off="50" name="yellow" />
+	</colors-list>
+	<onstart>F000014E1C02047F000000000000F7</onstart>
+	<onexit>B07F7E</onexit>
+</midi>

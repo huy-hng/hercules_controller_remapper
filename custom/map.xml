@@ -155,7 +155,7 @@
 	<!-- #endregion PADFX -->
 
 	<!-- #region mode 8 (beatjump) -->
-	<map name="BEATJMP1_A" action="chann=1  action=skip_beat value=&quot;-9&quot;" />
+	<map name="BEATJMP1_A" action="chann=1  action=skip_beat value=&quot;-1&quot;" />
 	<map name="BEATJMP1_B" action="chann=2  action=skip_beat value=&quot;-1&quot;" />
 	<map name="BEATJMP2_A" action="chann=1  action=skip_beat value=&quot;+1&quot;" />
 	<map name="BEATJMP2_B" action="chann=2  action=skip_beat value=&quot;+1&quot;" />
